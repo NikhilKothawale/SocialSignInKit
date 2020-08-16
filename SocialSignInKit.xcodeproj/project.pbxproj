@@ -10,6 +10,9 @@
 		A250628324E9AA8C007DC296 /* SocialSignInKit.h in Headers */ = {isa = PBXBuildFile; fileRef = A250628124E9AA8C007DC296 /* SocialSignInKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A250629924E9AEA2007DC296 /* AppleUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A250629824E9AEA2007DC296 /* AppleUser.swift */; };
 		A250629D24E9AEEE007DC296 /* AppleSignInManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A250629C24E9AEEE007DC296 /* AppleSignInManager.swift */; };
+		A25062A624E9B05F007DC296 /* GoogleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25062A524E9B05F007DC296 /* GoogleService.swift */; };
+		A25062A824E9B0A5007DC296 /* GoogleUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25062A724E9B0A5007DC296 /* GoogleUser.swift */; };
+		A25062AA24E9B106007DC296 /* GoogleSignInManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25062A924E9B106007DC296 /* GoogleSignInManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,6 +21,9 @@
 		A250628224E9AA8C007DC296 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A250629824E9AEA2007DC296 /* AppleUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleUser.swift; sourceTree = "<group>"; };
 		A250629C24E9AEEE007DC296 /* AppleSignInManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleSignInManager.swift; sourceTree = "<group>"; };
+		A25062A524E9B05F007DC296 /* GoogleService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleService.swift; sourceTree = "<group>"; };
+		A25062A724E9B0A5007DC296 /* GoogleUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleUser.swift; sourceTree = "<group>"; };
+		A25062A924E9B106007DC296 /* GoogleSignInManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSignInManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +56,7 @@
 		A250628024E9AA8C007DC296 /* SocialSignInKit */ = {
 			isa = PBXGroup;
 			children = (
+				A25062A424E9B03E007DC296 /* GoogleSignIn */,
 				A250629524E9ADE6007DC296 /* AppleSignIn */,
 				A250628124E9AA8C007DC296 /* SocialSignInKit.h */,
 				A250628224E9AA8C007DC296 /* Info.plist */,
@@ -64,6 +71,16 @@
 				A250629C24E9AEEE007DC296 /* AppleSignInManager.swift */,
 			);
 			path = AppleSignIn;
+			sourceTree = "<group>";
+		};
+		A25062A424E9B03E007DC296 /* GoogleSignIn */ = {
+			isa = PBXGroup;
+			children = (
+				A25062A524E9B05F007DC296 /* GoogleService.swift */,
+				A25062A724E9B0A5007DC296 /* GoogleUser.swift */,
+				A25062A924E9B106007DC296 /* GoogleSignInManager.swift */,
+			);
+			path = GoogleSignIn;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,7 +164,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A250629D24E9AEEE007DC296 /* AppleSignInManager.swift in Sources */,
+				A25062AA24E9B106007DC296 /* GoogleSignInManager.swift in Sources */,
 				A250629924E9AEA2007DC296 /* AppleUser.swift in Sources */,
+				A25062A624E9B05F007DC296 /* GoogleService.swift in Sources */,
+				A25062A824E9B0A5007DC296 /* GoogleUser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
