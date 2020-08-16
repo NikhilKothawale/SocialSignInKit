@@ -8,22 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		A250628324E9AA8C007DC296 /* SocialSignInKit.h in Headers */ = {isa = PBXBuildFile; fileRef = A250628124E9AA8C007DC296 /* SocialSignInKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A250629024E9AAC4007DC296 /* AppleSignInManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A250628A24E9AAC4007DC296 /* AppleSignInManager.swift */; };
-		A250629124E9AAC4007DC296 /* AppleUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A250628B24E9AAC4007DC296 /* AppleUser.swift */; };
-		A250629224E9AAC4007DC296 /* GoogleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A250628D24E9AAC4007DC296 /* GoogleService.swift */; };
-		A250629324E9AAC4007DC296 /* GoogleUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A250628E24E9AAC4007DC296 /* GoogleUser.swift */; };
-		A250629424E9AAC4007DC296 /* GoogleSignInManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A250628F24E9AAC4007DC296 /* GoogleSignInManager.swift */; };
+		A250629924E9AEA2007DC296 /* AppleUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A250629824E9AEA2007DC296 /* AppleUser.swift */; };
+		A250629D24E9AEEE007DC296 /* AppleSignInManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A250629C24E9AEEE007DC296 /* AppleSignInManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A250627E24E9AA8C007DC296 /* SocialSignInKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SocialSignInKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A250628124E9AA8C007DC296 /* SocialSignInKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SocialSignInKit.h; sourceTree = "<group>"; };
 		A250628224E9AA8C007DC296 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A250628A24E9AAC4007DC296 /* AppleSignInManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppleSignInManager.swift; sourceTree = "<group>"; };
-		A250628B24E9AAC4007DC296 /* AppleUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppleUser.swift; sourceTree = "<group>"; };
-		A250628D24E9AAC4007DC296 /* GoogleService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleService.swift; sourceTree = "<group>"; };
-		A250628E24E9AAC4007DC296 /* GoogleUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleUser.swift; sourceTree = "<group>"; };
-		A250628F24E9AAC4007DC296 /* GoogleSignInManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleSignInManager.swift; sourceTree = "<group>"; };
+		A250629824E9AEA2007DC296 /* AppleUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleUser.swift; sourceTree = "<group>"; };
+		A250629C24E9AEEE007DC296 /* AppleSignInManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleSignInManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,33 +50,20 @@
 		A250628024E9AA8C007DC296 /* SocialSignInKit */ = {
 			isa = PBXGroup;
 			children = (
-				A250628924E9AAC4007DC296 /* AppleSignIn */,
-				A250628C24E9AAC4007DC296 /* GoogleSignIn */,
+				A250629524E9ADE6007DC296 /* AppleSignIn */,
 				A250628124E9AA8C007DC296 /* SocialSignInKit.h */,
 				A250628224E9AA8C007DC296 /* Info.plist */,
 			);
 			path = SocialSignInKit;
 			sourceTree = "<group>";
 		};
-		A250628924E9AAC4007DC296 /* AppleSignIn */ = {
+		A250629524E9ADE6007DC296 /* AppleSignIn */ = {
 			isa = PBXGroup;
 			children = (
-				A250628A24E9AAC4007DC296 /* AppleSignInManager.swift */,
-				A250628B24E9AAC4007DC296 /* AppleUser.swift */,
+				A250629824E9AEA2007DC296 /* AppleUser.swift */,
+				A250629C24E9AEEE007DC296 /* AppleSignInManager.swift */,
 			);
-			name = AppleSignIn;
-			path = ../../SocialSignIn/SocialSignIn/AppleSignIn;
-			sourceTree = "<group>";
-		};
-		A250628C24E9AAC4007DC296 /* GoogleSignIn */ = {
-			isa = PBXGroup;
-			children = (
-				A250628D24E9AAC4007DC296 /* GoogleService.swift */,
-				A250628E24E9AAC4007DC296 /* GoogleUser.swift */,
-				A250628F24E9AAC4007DC296 /* GoogleSignInManager.swift */,
-			);
-			name = GoogleSignIn;
-			path = ../../SocialSignIn/SocialSignIn/GoogleSignIn;
+			path = AppleSignIn;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +109,7 @@
 				TargetAttributes = {
 					A250627D24E9AA8C007DC296 = {
 						CreatedOnToolsVersion = 11.6;
+						LastSwiftMigration = 1160;
 					};
 				};
 			};
@@ -164,11 +146,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A250629024E9AAC4007DC296 /* AppleSignInManager.swift in Sources */,
-				A250629424E9AAC4007DC296 /* GoogleSignInManager.swift in Sources */,
-				A250629124E9AAC4007DC296 /* AppleUser.swift in Sources */,
-				A250629224E9AAC4007DC296 /* GoogleService.swift in Sources */,
-				A250629324E9AAC4007DC296 /* GoogleUser.swift in Sources */,
+				A250629D24E9AEEE007DC296 /* AppleSignInManager.swift in Sources */,
+				A250629924E9AEA2007DC296 /* AppleUser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,6 +277,7 @@
 		A250628724E9AA8C007DC296 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -313,6 +293,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = NikhilKothawale.SocialSignInKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -321,6 +302,7 @@
 		A250628824E9AA8C007DC296 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
