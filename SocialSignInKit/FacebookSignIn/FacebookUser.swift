@@ -2,7 +2,7 @@
 //  FacebookUser.swift
 //  SocialSignInKit
 //
-//  Created by Indexnine on 17/08/20.
+//  Created by Nikhil Kothawale on 17/08/20.
 //  Copyright © 2020 Nikhil Kothawale. All rights reserved.
 //
 
