@@ -6,6 +6,8 @@
 //  Copyright © 2020 Nikhil Kothawale. All rights reserved.
 //
 
+import Foundation
+import UIKit
 import AuthenticationServices
 
 public protocol AppleSignInManagerDelegate: NSObjectProtocol {

@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 #if canImport(GoogleSignIn)
 import GoogleSignIn
 
@@ -56,7 +57,7 @@ extension GoogleSignInManager : GIDSignInDelegate {
     
     func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
         if let error = error {
-            self.delegate?.oogleSignIn(didCompleteWithError: error)
+            self.delegate?.googleSignIn(didCompleteWithError: error)
         }
         
         let userId : String = user.userID
@@ -67,7 +68,7 @@ extension GoogleSignInManager : GIDSignInDelegate {
         let email : String = user.profile.email
         
         googleUser = GoogleUser(userId: userId, idToken: idToken, fullName: fullName, givenName: givenName, familyName: familyName, email: email)
-        self.delegate?.oogleSignIn(didCompleteWithUser: GoogleUser)
+        self.delegate?.googleSignIn(didCompleteWithUser: GoogleUser)
         
     }
     

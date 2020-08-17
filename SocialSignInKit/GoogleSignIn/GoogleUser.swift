@@ -47,7 +47,7 @@ public class GoogleUser {
         self._fullName = fullName
         self._givenName = givenName
         self._familyName = familyName
-        self._email  = familyName
+        self._email  = email
         
     }
     

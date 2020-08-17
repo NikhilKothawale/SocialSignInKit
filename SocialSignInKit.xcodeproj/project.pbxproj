@@ -13,6 +13,8 @@
 		A25062A624E9B05F007DC296 /* GoogleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25062A524E9B05F007DC296 /* GoogleService.swift */; };
 		A25062A824E9B0A5007DC296 /* GoogleUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25062A724E9B0A5007DC296 /* GoogleUser.swift */; };
 		A25062AA24E9B106007DC296 /* GoogleSignInManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25062A924E9B106007DC296 /* GoogleSignInManager.swift */; };
+		A25062AD24E9B4D1007DC296 /* FacebookSignInManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25062AC24E9B4D1007DC296 /* FacebookSignInManager.swift */; };
+		A2F70F7D24EAF4A6000760E6 /* FacebookUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F70F7C24EAF4A6000760E6 /* FacebookUser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		A25062A524E9B05F007DC296 /* GoogleService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleService.swift; sourceTree = "<group>"; };
 		A25062A724E9B0A5007DC296 /* GoogleUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleUser.swift; sourceTree = "<group>"; };
 		A25062A924E9B106007DC296 /* GoogleSignInManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSignInManager.swift; sourceTree = "<group>"; };
+		A25062AC24E9B4D1007DC296 /* FacebookSignInManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookSignInManager.swift; sourceTree = "<group>"; };
+		A2F70F7C24EAF4A6000760E6 /* FacebookUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookUser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 		A250628024E9AA8C007DC296 /* SocialSignInKit */ = {
 			isa = PBXGroup;
 			children = (
+				A25062AB24E9B474007DC296 /* FacebookSignIn */,
 				A25062A424E9B03E007DC296 /* GoogleSignIn */,
 				A250629524E9ADE6007DC296 /* AppleSignIn */,
 				A250628124E9AA8C007DC296 /* SocialSignInKit.h */,
@@ -81,6 +86,15 @@
 				A25062A924E9B106007DC296 /* GoogleSignInManager.swift */,
 			);
 			path = GoogleSignIn;
+			sourceTree = "<group>";
+		};
+		A25062AB24E9B474007DC296 /* FacebookSignIn */ = {
+			isa = PBXGroup;
+			children = (
+				A25062AC24E9B4D1007DC296 /* FacebookSignInManager.swift */,
+				A2F70F7C24EAF4A6000760E6 /* FacebookUser.swift */,
+			);
+			path = FacebookSignIn;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,7 +180,9 @@
 				A250629D24E9AEEE007DC296 /* AppleSignInManager.swift in Sources */,
 				A25062AA24E9B106007DC296 /* GoogleSignInManager.swift in Sources */,
 				A250629924E9AEA2007DC296 /* AppleUser.swift in Sources */,
+				A25062AD24E9B4D1007DC296 /* FacebookSignInManager.swift in Sources */,
 				A25062A624E9B05F007DC296 /* GoogleService.swift in Sources */,
+				A2F70F7D24EAF4A6000760E6 /* FacebookUser.swift in Sources */,
 				A25062A824E9B0A5007DC296 /* GoogleUser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -46,7 +46,7 @@ public class AppleUser {
         self._idToken = idToken
         self._givenName = givenName
         self._familyName = familyName
-        self._email  = familyName
+        self._email  = email
         self._authorizationCode = authorizationCode
         
     }
