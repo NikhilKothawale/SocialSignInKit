@@ -50,7 +50,7 @@ public class AppleSignInManager: NSObject {
         }
     }
     
-    public func logIn(){
+    public func signIn(){
         self.controller?.performRequests()
     }
 }

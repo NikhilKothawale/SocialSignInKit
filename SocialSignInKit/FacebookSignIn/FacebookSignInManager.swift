@@ -35,11 +35,11 @@ class FacebookSignInManager {
         }
     }
     
-    func login(loginbutton: FBLoginButton){
+    func signIn(loginbutton: FBLoginButton){
         
     }
     
-    func logout(loginbutton: FBLoginButton){
+    func signOut(loginbutton: FBLoginButton){
         loginButtonDidLogOut(loginButton)
     }
 }
