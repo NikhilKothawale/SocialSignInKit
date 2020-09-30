@@ -13,13 +13,13 @@ import FBSDKCoreKit
 import FBSDKLoginKit
 
 
-protocol FacebookSignInManagerDelegate {
+public protocol FacebookSignInManagerDelegate {
     func facebookSignIn(didCompleteWithUser facebookUser: FacebookUser)
     func facebookSignIn(didCompleteWithError error: Error)
 }
 
 
-class FacebookSignInManager {
+public class FacebookSignInManager {
     
     private static var singleInstance : FBSDKLoginManager?
     

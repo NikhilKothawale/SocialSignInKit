@@ -8,7 +8,7 @@
 
 import Foundation
 
-class GoogleService{
+public class GoogleService{
     
     var dict = [String: AnyObject]()
     static var singleInstance : GoogleService?

@@ -11,12 +11,12 @@ import UIKit
 #if canImport(GoogleSignIn)
 import GoogleSignIn
 
-protocol GoogleSignInManagerDelegate {
+public protocol GoogleSignInManagerDelegate {
     func googleSignIn(didCompleteWithUser googleUser: GoogleUser)
     func googleSignIn(didCompleteWithError error: Error)
 }
 
-class GoogleSignInManager : NSObject {
+public class GoogleSignInManager : NSObject {
     
     private static var singleInstance : GoogleSignInManager?
     
