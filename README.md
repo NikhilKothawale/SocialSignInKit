@@ -2,6 +2,8 @@
 
 >SocialSignInKit is a multiple social sign-in kit. Support for Apple, Google, and Facebook sign-in.
 
+----------
+
 - [Requirements](#requirements)
 - [Installation](#installation)
 * Setup
@@ -203,6 +205,7 @@ class ViewController: UIViewController {
 
 In the Sign-in and Sign-out button action outlets add the following code respectively.
 ```swift
+
 @IBAction func googleSignInButtonClicked(_ sender: Any) {
         GoogleSignInManager.shared.signIn()
     }
@@ -216,13 +219,18 @@ In the Sign-in and Sign-out button action outlets add the following code respect
 After this you need to extend GoogleSignInManagerDelegate in your ViewController which has Sign-in button.
 
 ```swift 
-func googleSignIn(didCompleteWithUser googleUser: GoogleUser){
+import SocialSignInKit
 
+extension ViewController: GoogleSignInManagerDelegate{
+    func googleSignIn(didCompleteWithUser googleUser: GoogleUser){
+
+    }
+
+    func googleSignIn(didCompleteWithError error: Error){
+
+    }    
 }
 
-func googleSignIn(didCompleteWithError error: Error){
-
-}
 ```
 The function didCompleteWithUser return the users information like name, email, userId, etc.
 
@@ -332,12 +340,16 @@ In the Sign-in and Sign-out button action outlets add the following code respect
 After this you need to extend FacebookSignInManagerDelegate in your ViewController which has Sign-in button.
 
 ```swift 
-func facebookSignIn(didCompleteWithUser facebookUser: FacebookUser){
+import SocialSignInKit
 
-}
+extension ViewController: GoogleSignInManagerDelegate{
+    func facebookSignIn(didCompleteWithUser facebookUser: FacebookUser){
 
-func facebookSignIn(didCompleteWithError error: Error){
+    }
 
+    func facebookSignIn(didCompleteWithError error: Error){
+
+    }
 }
 ```
 The function didCompleteWithUser return the users information like name, email, userId, etc.
